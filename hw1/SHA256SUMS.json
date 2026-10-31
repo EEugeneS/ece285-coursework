@@ -1,0 +1,21 @@
+{
+  "hw1/README.md": "1506ee2a7b3c56501f5b32f17e6328c9377cc06811fc486a113fd1d40781fe12",
+  "hw1/data.py": "ffaddf4827d9213808b97187629836d6f992f2d98bdec8aa150ad304e12f1264",
+  "hw1/download_data.py": "be95e7735aa9c29b26412969087f9fa21d7b5d8502d92ad0e53a268ea493f67b",
+  "hw1/evaluate.py": "25cffdef92a82182df28c450968633238e800f3d7cd754826d5d830ba1728e04",
+  "hw1/generate.py": "9de1c5f6077d02f506c1de24d4989af0019f414fbe99aa1ab72206b8d23391ca",
+  "hw1/plot_results.py": "925fffde063da7e65d0002fdc86b12c1581b88b8e44df7536c78a5156e123f45",
+  "hw1/prepare_data.py": "91eb1e967e2d45641d7f1c854e22be668eccc6314c2dd8c4485f27b9922ba83a",
+  "hw1/recorded_results/environment.json": "ca2f0aeb41ce7cb4f61da159a9bc4fee30a6b59be2c58c73869bd3240638e5e0",
+  "hw1/recorded_results/manifest.json": "31e9aef149aee792485133534b33811ec0c1ecb3c21ab108cbd09109a7b53930",
+  "hw1/recorded_results/z128_seed285/config.json": "d5a600915964b91a366c0270aadde0f02b5554d3b32f826d8512a9ca046831ce",
+  "hw1/recorded_results/z128_seed285/history.json": "2b7599a54377f38bbb192af8c448fc77cc20a55dc7ebe00dda535af458f8792d",
+  "hw1/recorded_results/z128_seed285/metrics-test.json": "25d54659754d38ef112da50073aee2d6e3918432415f8dcf32266d0e460a6d9d",
+  "hw1/recorded_results/z64_seed285/config.json": "c6e3ce3cc403ae1127e8fca02023178aced1df706f78feb9e06873248a1934fc",
+  "hw1/recorded_results/z64_seed285/history.json": "7995d4e445f82f5088376dda8eab6d31b692fdb5d1837ebc228eef7099b47176",
+  "hw1/recorded_results/z64_seed285/metrics-test.json": "9a162a2e34a2a407ac73fed057e671bfdcff72e4dfc27398b17ef0e5f41e0c7c",
+  "hw1/requirements.txt": "1ef5ad1162814aa655fde1fd38ce6d73e2d3d7d2f51caddcf500cf86e5041e78",
+  "hw1/train.py": "9e420b58449d80e25edbbba13e18fa1a596530178779222268bad38c84475d1c",
+  "hw1/utils.py": "400dfe58c50cacb095ed172f4bd51ac9712abba75ae4b365a197522f6f3a9f74",
+  "hw1/vae.py": "ef9ff9b258cdf16512007d654f0f1e7a4d735bca0077c4a18f32e5ba81355140"
+}

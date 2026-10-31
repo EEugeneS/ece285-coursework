@@ -1,0 +1,16 @@
+{
+  "python": "3.11.9 | packaged by conda-forge | (main, Apr 19 2024, 18:36:13) [GCC 12.3.0]",
+  "executable": "/home/yus121/hw1/.venv/bin/python",
+  "directory": "/home/yus121/hw1",
+  "free_disk_gib": 70959.11,
+  "packages": {
+    "torch": "2.2.1+cu121",
+    "torchvision": "0.17.1+cu121",
+    "numpy": "1.26.4",
+    "Pillow": "10.4.0",
+    "scipy": "1.13.0",
+    "pytorch-ignite": "0.5.3"
+  },
+  "cuda_version": "12.1",
+  "gpu": "NVIDIA RTX A5000"
+}

@@ -1,0 +1,9 @@
+torch>=2.1,<3
+torchvision>=0.16,<1
+# The course CUDA torch may be compiled against the NumPy 1.x C API.
+numpy>=1.26,<2
+Pillow>=10,<13
+matplotlib>=3.8,<4
+# Ignite 0.5.3 calls the legacy scipy.linalg.sqrtm(..., disp=False) API.
+scipy>=1.12,<1.16
+pytorch-ignite==0.5.3

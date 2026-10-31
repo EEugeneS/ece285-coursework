@@ -1,0 +1,16 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.torch-cache/
+.env
+.env.*
+!.env.example
+**/data/
+**/runs/
+**/backups/
+*.pt
+*.pth
+*.ckpt
+*.zip

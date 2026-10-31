@@ -1,0 +1,33 @@
+{
+  "data_root": "/home/yus121/hw1/data/kaggle-cache/datasets/paultimothymooney/chest-xray-pneumonia/versions/2/chest_xray",
+  "manifest": "data/manifest.json",
+  "out": "runs/z64_seed285",
+  "latent_dim": 64,
+  "image_size": 128,
+  "width": 32,
+  "epochs": 50,
+  "batch_size": 64,
+  "lr": 0.001,
+  "beta": 1.0,
+  "kl_warmup": 0,
+  "patience": 10,
+  "seed": 285,
+  "workers": 2,
+  "threads": 2,
+  "device": "cuda",
+  "resume": null,
+  "manifest_sha256": "31e9aef149aee792485133534b33811ec0c1ecb3c21ab108cbd09109a7b53930",
+  "environment": {
+    "packages": {
+      "torch": "2.2.1+cu121",
+      "torchvision": "0.17.1+cu121",
+      "numpy": "1.26.4",
+      "Pillow": "10.4.0",
+      "scipy": "1.13.0",
+      "pytorch-ignite": "0.5.3"
+    },
+    "cuda_version": "12.1",
+    "gpu": "NVIDIA RTX A5000"
+  },
+  "parameter_count": 7157185
+}

@@ -1,0 +1,36 @@
+{
+  "fid": 0.09827329165748423,
+  "inception_score": 1.833417152004642,
+  "fid_variant": "ignite-0.5.3-default-inception-v3-1000D-softmax (assignment tutorial)",
+  "num_real": 618,
+  "num_generated": 618,
+  "split": "test",
+  "seed": 2026,
+  "preprocessing": "128/64/32px model images; grayscale->RGB; PIL uint8 bilinear 299px; [0,1]",
+  "checkpoint": "/home/yus121/hw1/runs/z128_seed285/best.pt",
+  "epoch": 49,
+  "model_config": {
+    "latent_dim": 128,
+    "image_size": 128,
+    "width": 32
+  },
+  "manifest_sha256": "31e9aef149aee792485133534b33811ec0c1ecb3c21ab108cbd09109a7b53930",
+  "seconds": 5.3306897431612015,
+  "environment": {
+    "packages": {
+      "torch": "2.2.1+cu121",
+      "torchvision": "0.17.1+cu121",
+      "numpy": "1.26.4",
+      "Pillow": "10.4.0",
+      "scipy": "1.13.0",
+      "pytorch-ignite": "0.5.3"
+    },
+    "cuda_version": "12.1",
+    "gpu": "NVIDIA RTX A5000"
+  },
+  "limitations": [
+    "ImageNet feature space, not a medical fidelity metric",
+    "Finite reference set biases FID; do not compare across sample counts",
+    "Deterministic mean reconstruction is not used as generated data"
+  ]
+}
