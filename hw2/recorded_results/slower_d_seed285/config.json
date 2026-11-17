@@ -1,0 +1,31 @@
+{
+  "data_root": "data/wikiart",
+  "out": "runs/slower_d_seed285",
+  "latent_dim": 100,
+  "width": 64,
+  "batch_size": 128,
+  "lr_g": 0.0002,
+  "lr_d": 0.0001,
+  "epochs": 25,
+  "eval_every": 5,
+  "seed": 285,
+  "workers": 2,
+  "device": "cuda",
+  "resume": null,
+  "manifest_sha256": "5949f3f943a28b24be415c330a84bafa4f15fba17f91d9ad4653097ec0e47e53",
+  "environment": {
+    "packages": {
+      "torch": "2.2.1+cu121",
+      "torchvision": "0.17.1+cu121",
+      "numpy": "1.26.4",
+      "Pillow": "10.4.0",
+      "scipy": "1.13.0",
+      "pytorch-ignite": "0.5.3"
+    },
+    "cuda_version": "12.1",
+    "gpu": "NVIDIA RTX A5000"
+  },
+  "train_images": 77694,
+  "parameters_g": 3576704,
+  "parameters_d": 2765568
+}

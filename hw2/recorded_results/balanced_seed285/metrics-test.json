@@ -1,0 +1,26 @@
+{
+  "fid": 0.032580805696288906,
+  "inception_score": 2.723270993392406,
+  "split": "test",
+  "num_real": 2000,
+  "num_generated": 2000,
+  "seed": 2027,
+  "fid_variant": "ignite-0.5.3-tutorial-1000D-softmax",
+  "preprocessing": "RGB [0,1] -> PIL uint8 -> bilinear 299x299 -> tensor [0,1]",
+  "manifest_sha256": "5949f3f943a28b24be415c330a84bafa4f15fba17f91d9ad4653097ec0e47e53",
+  "epoch": 25,
+  "checkpoint": "/home/yus121/hw2/runs/balanced_seed285/best.pt",
+  "environment": {
+    "packages": {
+      "torch": "2.2.1+cu121",
+      "torchvision": "0.17.1+cu121",
+      "numpy": "1.26.4",
+      "Pillow": "10.4.0",
+      "scipy": "1.13.0",
+      "pytorch-ignite": "0.5.3"
+    },
+    "cuda_version": "12.1",
+    "gpu": "NVIDIA RTX A5000"
+  },
+  "seconds": 6.414679998531938
+}

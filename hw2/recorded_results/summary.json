@@ -1,0 +1,40 @@
+{
+  "archive_images": 81444,
+  "unique_images": 80694,
+  "duplicates": 750,
+  "corrupt": 0,
+  "split_counts": {
+    "test": 2000,
+    "train": 77694,
+    "val": 1000
+  },
+  "style_counts": {
+    "Abstract_Expressionism": 2781,
+    "Action_painting": 93,
+    "Analytical_Cubism": 110,
+    "Art_Nouveau_Modern": 4333,
+    "Baroque": 4238,
+    "Color_Field_Painting": 1546,
+    "Contemporary_Realism": 481,
+    "Cubism": 2233,
+    "Early_Renaissance": 1389,
+    "Expressionism": 6660,
+    "Fauvism": 814,
+    "High_Renaissance": 1340,
+    "Impressionism": 13047,
+    "Mannerism_Late_Renaissance": 1278,
+    "Minimalism": 1281,
+    "Naive_Art_Primitivism": 2385,
+    "New_Realism": 314,
+    "Northern_Renaissance": 2550,
+    "Pointillism": 507,
+    "Pop_Art": 1464,
+    "Post_Impressionism": 6399,
+    "Realism": 10703,
+    "Rococo": 2088,
+    "Romanticism": 6955,
+    "Symbolism": 4326,
+    "Synthetic_Cubism": 216,
+    "Ukiyo_e": 1163
+  }
+}

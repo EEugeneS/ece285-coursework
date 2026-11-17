@@ -1,0 +1,12 @@
+{
+  "packages": {
+    "torch": "2.2.1+cu121",
+    "torchvision": "0.17.1+cu121",
+    "numpy": "1.26.4",
+    "Pillow": "10.4.0",
+    "scipy": "1.13.0",
+    "pytorch-ignite": "0.5.3"
+  },
+  "cuda_version": "12.1",
+  "gpu": "NVIDIA RTX A5000"
+}

@@ -39,6 +39,9 @@ The split removes exact duplicates after RGB resizing/cropping and reserves
 cached arrays, and checkpoints are excluded from Git. Recorded numeric results
 and the split manifest are in `recorded_results/`; versions and hardware are
 recorded alongside the experiment configurations.
+Auxiliary seed-2026 test scores are retained separately; the report uses seed 2027.
+Saved curves can be regenerated without training:
+`python plot_results.py recorded_results/balanced_seed285 recorded_results/slower_d_seed285`.
 
 Evaluation uses Ignite 0.5.3's tutorial FID with 1,000-dimensional Inception
 softmax features, not standard pool3 FID. Images are mapped to [0,1] before PIL

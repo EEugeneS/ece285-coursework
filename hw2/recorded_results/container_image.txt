@@ -1,0 +1,1 @@
+ghcr.io/ucsd-ets/scipy-ml-notebook@sha256:b1f4ef6419847c6e5f646323081bf0b3f5d6c5111b8cb49206489cc7ae1e78c4

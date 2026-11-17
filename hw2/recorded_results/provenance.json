@@ -1,0 +1,46 @@
+{
+  "dataset": "steubk/wikiart",
+  "dataset_version": 1,
+  "training_source_commit": "e5c568f4b95ebd193c08152a446e4e776621ba13",
+  "final_evaluation_source_commit": "ddd6e10a627e7a2e7bc877543de3f3ab0510c0e8",
+  "source_sha256": {
+    "data.py": "33939f80ee8b8bcbee3360bd04563f76aba166344891a610dd65c6836cba9219",
+    "evaluate.py": "a1bfc82a965d027f6773c94a680e1625187d6d8f2219cef950a7ed825487480a",
+    "generate.py": "a7e3ddeda76353a5fde98e90a5b360ddbc71f0ba9de545d881cd0c5efad415c9",
+    "models.py": "8ea6a8f6981c255a234a4e0ca184054a866c60679e5cc0843b8f26bd5c17eea9",
+    "plot_results.py": "4d98a73b9fffa29bdedd22861094084e22f8dbc996a719646047d9fae68d94c5",
+    "prepare_data.py": "8dc2b4b2480127396f3d9eabdb850f0241666c9d2668cf883deda283ec21a14f",
+    "train.py": "81c74c337455183b19b26a374851f962b096ce7e7095cd25c77669aa223b2f25",
+    "utils.py": "0491b9aff540a0c710455a8df3e2075f776490192fa737d24e6f9972dd405404"
+  },
+  "evaluation_signature": {
+    "environment": {
+      "cuda_version": "12.1",
+      "gpu": "NVIDIA RTX A5000",
+      "packages": {
+        "Pillow": "10.4.0",
+        "numpy": "1.26.4",
+        "pytorch-ignite": "0.5.3",
+        "scipy": "1.13.0",
+        "torch": "2.2.1+cu121",
+        "torchvision": "0.17.1+cu121"
+      }
+    },
+    "manifest_sha256": "5949f3f943a28b24be415c330a84bafa4f15fba17f91d9ad4653097ec0e47e53",
+    "precision": {
+      "cudnn_deterministic": true,
+      "cudnn_tf32": true,
+      "matmul_tf32": true
+    },
+    "preprocessing": "RGB [0,1] -> PIL uint8 -> bilinear 299x299 -> tensor [0,1]",
+    "variant": "ignite-0.5.3-tutorial-1000D-softmax"
+  },
+  "evaluation_plan": {
+    "frozen_utc": "2026-11-17T04:15:27.776292+00:00",
+    "validation_seed": 2026,
+    "primary_test_seed": 2027,
+    "reason": "Independent test latent draws; training budgets and validation-selected checkpoints remain fixed. Plan fixed before reading initial test scores."
+  },
+  "test_evaluation_note": "Both checkpoints were frozen before all test evaluations. The report uses independent latent seed 2027. Auxiliary seed-2026 results share validation noise and are retained separately.",
+  "completed_utc": "Tue Nov 17 04:16:48 UTC 2026"
+}
