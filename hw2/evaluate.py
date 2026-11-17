@@ -101,7 +101,7 @@ if __name__ == "__main__":
     p.add_argument("--checkpoint", required=True)
     p.add_argument("--output", required=True)
     p.add_argument("--split", choices=("val", "test"), default="test")
-    p.add_argument("--seed", type=int, default=2026)
+    p.add_argument("--seed", type=int, default=2027)
     p.add_argument("--batch-size", type=int, default=32)
     p.add_argument("--device", default="cuda")
     args = p.parse_args()

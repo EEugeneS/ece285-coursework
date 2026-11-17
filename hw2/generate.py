@@ -12,7 +12,7 @@ if __name__ == "__main__":
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--checkpoint", required=True)
     p.add_argument("--out", required=True)
-    p.add_argument("--seed", type=int, default=2026)
+    p.add_argument("--seed", type=int, default=2027)
     p.add_argument("--count", type=int, default=64)
     p.add_argument("--device", default="cuda")
     args = p.parse_args()

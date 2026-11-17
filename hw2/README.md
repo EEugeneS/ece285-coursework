@@ -28,7 +28,8 @@ python plot_results.py runs/balanced_seed285 runs/slower_d_seed285
 
 Training defaults: 25 epochs, batch 128, latent size 100, Adam (0.5, 0.999),
 generator learning rate 0.0002, seed 285. Validation FID selects the checkpoint;
-test images are used only for final evaluation. Sampling seed is 2026.
+test images are used only for final evaluation. Validation sampling uses seed 2026;
+final test evaluation and generation use independent seed 2027.
 Use new output directories for fresh runs, or pass `--resume runs/NAME/latest.pt`
 to continue an interrupted run with the same configuration.
 GPU and library changes can affect exact numerical reproducibility.
