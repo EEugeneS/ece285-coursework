@@ -15,7 +15,7 @@ from torchvision.transforms import functional as TF
 from torchvision.utils import save_image
 
 from data import WikiArtDataset, manifest_digest
-from utils import environment, load_generator, write_json
+from utils import environment, load_generator, seed_everything, write_json
 
 
 VARIANT = "ignite-0.5.3-tutorial-1000D-softmax"
@@ -48,7 +48,10 @@ class Evaluator:
             return self.real_features[split]
         path = self.root / f"inception-{split}.npz"
         signature = dict(manifest_sha256=self.digest, variant=VARIANT,
-                         preprocessing=PREPROCESSING, environment=environment())
+                         preprocessing=PREPROCESSING, environment=environment(),
+                         precision=dict(cudnn_tf32=torch.backends.cudnn.allow_tf32,
+                                        matmul_tf32=torch.backends.cuda.matmul.allow_tf32,
+                                        cudnn_deterministic=torch.backends.cudnn.deterministic))
         if path.exists():
             with np.load(path, allow_pickle=False) as cached:
                 if json.loads(str(cached["signature"])) == signature:
@@ -103,6 +106,7 @@ if __name__ == "__main__":
     p.add_argument("--device", default="cuda")
     args = p.parse_args()
     torch.set_num_threads(2)
+    seed_everything(args.seed)
     output = Path(args.output)
     if output.exists():
         raise FileExistsError(output)

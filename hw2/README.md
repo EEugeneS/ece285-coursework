@@ -31,6 +31,7 @@ generator learning rate 0.0002, seed 285. Validation FID selects the checkpoint;
 test images are used only for final evaluation. Sampling seed is 2026.
 Use new output directories for fresh runs, or pass `--resume runs/NAME/latest.pt`
 to continue an interrupted run with the same configuration.
+GPU and library changes can affect exact numerical reproducibility.
 
 The split removes exact duplicates after RGB resizing/cropping and reserves
 1,000 validation and 2,000 test images, stratified by style. Dataset images,

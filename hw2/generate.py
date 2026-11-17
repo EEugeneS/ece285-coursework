@@ -5,7 +5,7 @@ from pathlib import Path
 import torch
 from torchvision.utils import save_image
 
-from utils import load_generator, write_json
+from utils import load_generator, seed_everything, write_json
 
 
 if __name__ == "__main__":
@@ -17,6 +17,7 @@ if __name__ == "__main__":
     p.add_argument("--device", default="cuda")
     args = p.parse_args()
     torch.set_num_threads(2)
+    seed_everything(args.seed)
     out = Path(args.out)
     if args.count < 1 or (out.exists() and any(out.iterdir())):
         raise ValueError("count must be positive and output must be empty")
